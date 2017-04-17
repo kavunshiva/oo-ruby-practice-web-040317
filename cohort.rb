@@ -3,13 +3,13 @@ class Cohort
 
   ALL = []
 
+  def self.all
+    ALL
+  end
+
   def initialize(teacher, student)
     @teacher = teacher
     @student = student
     self.class.all << self
-  end
-
-  def self.all
-    ALL
   end
 end
